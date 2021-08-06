@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: rgb(70, 211, 117);
+}
+
+.header-nav {
+    padding: 30px;
+    border-style: none;
+    border-color: white;
+}
+
+.header-nav>a {
+    margin: 10px 20px 10px 10px;
+}
+
+a:hover {
+    color: #00ff95;
+}
+
+.header {
+    height: 100%;
+}
+
+.header-image>img {
+    width: 100%;
+    z-index: 1;
+}
+
+.header>.header-image>h1 {
+    position: absolute;
+    z-index: 10;
+    left: 30%;
+    top: 40%;
+    width: 50%;
+    text-align: center;
+    opacity: 0;
+}
+
+.header-image>h1:hover {
+    color: rgb(255, 0, 0);
+    opacity: 1;
+}
+
+.personal-detail {
+    margin-top: 10%;
+    text-align: center;
+}
+
+.personal-detail>.avatar>img {
+    width: 210px;
+    height: 250px;
+    border-radius: 45%;
+    overflow: hidden;
+}
+
+.message {
+    margin-top: 5%;
+}
+
+.message>h1 {
+    color: #249b69;
+}
+
+.message>h2 {
+    color: #33b37d;
+}
+
+.project-one {
+    margin-top: 10%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.project-one>.image-one>img {
+    width: 50%;
+}
+
+.project-one>.message-one>h1 {
+    float: left;
+}
+
+.project-one>.image-one,
+.message-one {
+    display: inline-block;
+}
+
+.project-two {
+    margin-top: 10%;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-two>.image-two,
+.message-two {
+    display: inline-block;
+}
+
+.project-two>.message-two>h1 {
+    margin-top: 10%;
+}
+
+.project-three {
+    margin-top: 10%;
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.project-three>.message-three>h1 {
+    margin-top: 20%;
+}
+
+.project-three>.image-three,
+.message-three {
+    display: inline-block;
+}
+
+h2 {
+    font-size: 60px;
+    color: rgb(41, 238, 222);
+}
+
+.column {
+    float: left;
+    width: 25%;
+}
+
+.image-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Full screen 2560x1440*/
+
+@media (min-width: 2000px) and (max-width: 2560px) {
+    .header>.header-image>h1 {
+        position: absolute;
+        z-index: 10;
+        left: 30%;
+        top: 70%;
+        width: 50%;
+        text-align: center;
+        opacity: 0;
+    }
+    .header-image>h1:hover {
+        color: rgb(255, 0, 0);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 2100px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .column {
+        width: 100%;
+    }
+}
